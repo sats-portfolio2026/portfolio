@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NOVAへのお問い合わせ・SHOWROOM予約・採用に関するお問い合わせフォームとよくあるご質問です。">
+
+    <title>CONTACT | NOVA</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo">NOVA</a>
+
+        <button class="hamburger" id="js-hamburger" aria-label="メニューを開閉する" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="js-nav">
+            <a href="index.html">TOP</a>
+            <a href="about.html">ABOUT</a>
+            <a href="news.html">NEWS</a>
+            <a href="business.html">BUSINESS</a>
+            <a href="works.html">WORKS</a>
+            <a href="showroom.html">SHOWROOM</a>
+            <a href="company.html">COMPANY</a>
+            <a href="recruit.html">RECRUIT</a>
+            <a href="contact.html" class="active">CONTACT</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="contact-hero">
+
+            <div class="contact-hero-inner">
+                <div class="contact-hero-copy">
+                    <p class="page-number">08</p>
+                    <p class="hero-label">GET IN TOUCH</p>
+                    <h1>
+                        CONTACT
+                    </h1>
+                    <p class="hero-description">
+                        まずは、<br>
+                        お話を聞かせてください。
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-hero-visual">
+                <div class="contact-arch"></div>
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+
+        <section class="contact-faq">
+
+            <div class="section-inner">
+
+                <div class="faq-heading">
+                    <p class="section-number">01</p>
+                    <p class="section-label">FAQ</p>
+                    <h2>
+                        よくある<br>
+                        ご質問。
+                    </h2>
+                </div>
+
+                <div class="faq-list">
+
+                    <details>
+                        <summary>
+                            <span>Q01</span>
+                            相談だけでもできますか？
+                            <b>＋</b>
+                        </summary>
+                        <div class="faq-answer">
+                            はい。ご相談だけでもお気軽にお問い合わせください。
+                            暮らし方や空間のイメージをお伺いしながら、
+                            ご希望に合わせてご提案いたします。
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <span>Q02</span>
+                            SHOWROOMは予約が必要ですか？
+                            <b>＋</b>
+                        </summary>
+                        <div class="faq-answer">
+                            ご予約なしでもご覧いただけますが、
+                            ご相談をご希望の場合は事前予約をおすすめしています。
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <span>Q03</span>
+                            法人でも相談できますか？
+                            <b>＋</b>
+                        </summary>
+                        <div class="faq-answer">
+                            はい。オフィス、店舗、ホテルなど、
+                            法人のお客様からのご相談も承っています。
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <span>Q04</span>
+                            オーダー家具にも対応していますか？
+                            <b>＋</b>
+                        </summary>
+                        <div class="faq-answer">
+                            はい。空間のサイズや用途に合わせた
+                            オーダー家具・造作家具にも対応しています。
+                        </div>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORM -->
+
+        <section class="contact-form-section" id="form">
+
+            <div class="section-inner">
+
+                <div class="form-heading">
+                    <p class="section-number">02</p>
+                    <p class="section-label">CONTACT FORM</p>
+                    <h2>
+                        CONTACT<br>
+                        FORM
+                    </h2>
+                    <p>
+                        ご相談・ご質問など、
+                        お気軽にお問い合わせください。
+                    </p>
+                </div>
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <label for="category">
+                            CATEGORY
+                            <span>必須</span>
+                        </label>
+                        <select id="category" name="category" required>
+                            <option value="">お問い合わせ内容を選択</option>
+                            <option>空間・インテリアについて</option>
+                            <option>SHOWROOMについて</option>
+                            <option>法人のお客様</option>
+                            <option>採用について</option>
+                            <option>その他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">
+                            NAME
+                            <span>必須</span>
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="お名前" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            EMAIL
+                            <span>必須</span>
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="メールアドレス" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">COMPANY</label>
+                        <input type="text" id="company" name="company" placeholder="会社名">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            MESSAGE
+                            <span>必須</span>
+                        </label>
+                        <textarea id="message" name="message" rows="7" placeholder="お問い合わせ内容" required></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit">
+                            SEND MESSAGE
+                            <span>→</span>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIRECT CONTACT -->
+
+        <section class="contact-direct">
+
+            <div class="section-inner">
+
+                <div class="direct-heading">
+                    <p class="section-label">DIRECT CONTACT</p>
+                    <h2>
+                        お電話での<br>
+                        お問い合わせ
+                    </h2>
+                </div>
+
+                <div class="direct-content">
+                    <p class="direct-label">PHONE</p>
+                    <a href="tel:0312345678">03-1234-5678</a>
+                    <p>
+                        受付時間 10:00 — 18:00<br>
+                        火曜日・水曜日を除く
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACCESS -->
+
+        <section class="contact-access">
+
+            <div class="section-inner">
+
+                <div class="access-map map-embed">
+                    <iframe
+                        src="https://www.google.com/maps?q=東京都港区芝公園&output=embed"
+                        width="100%"
+                        height="100%"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="NOVA TOKYOの地図"></iframe>
+                </div>
+
+                <div class="access-info">
+                    <p class="section-label">ACCESS</p>
+                    <h2>NOVA TOKYO</h2>
+                    <p>
+                        〒105-0011<br>
+                        東京都港区芝公園
+                    </p>
+                    <p>都営三田線「芝公園駅」より徒歩5分</p>
+                    <a href="showroom.html" class="text-link">
+                        SHOWROOMを見る
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- END CTA -->
+
+        <section class="contact-end">
+            <div class="contact-end-inner">
+                <p>THANK YOU</p>
+                <h2 class="reveal-slide">
+                    NEW SCENERY,<br>
+                    WITH NOVA.
+                </h2>
+                <a href="index.html">
+                    BACK TO TOP
+                    <span>↑</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-col footer-info">
+                <div class="footer-logo">NOVA</div>
+                <div class="footer-section">
+                    <p class="footer-heading">Address</p>
+                    <p>
+                        Minato Ku, Tokyo To,<br>
+                        105-0011, Japan
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <p class="footer-heading">Navigation</p>
+                <a href="index.html">TOP</a>
+                <a href="about.html">ABOUT</a>
+                <a href="news.html">NEWS</a>
+                <a href="business.html">BUSINESS</a>
+                <a href="works.html">WORKS</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="footer-heading">Information</p>
+                <a href="showroom.html">SHOWROOM</a>
+                <a href="company.html">COMPANY</a>
+                <a href="recruit.html">RECRUIT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© NOVA Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

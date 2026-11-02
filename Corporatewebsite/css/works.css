@@ -1,0 +1,645 @@
+/* Works PAGE */
+
+/* -------------------------------------------------------------------------- */
+/* Hero                                                                       */
+/* -------------------------------------------------------------------------- */
+
+.works-hero {
+    position: relative;
+    min-height: 760px;
+    overflow: hidden;
+    background: var(--color-navy);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.works-hero-inner {
+    position: relative;
+    z-index: 5;
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.works-hero h1 {
+    margin: 0;
+    font-size: clamp(70px, 11vw, 150px);
+    line-height: .85;
+    font-weight: 500;
+}
+
+.works-hero-copy {
+    margin-top: 45px;
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+.works-hero-arch {
+    position: absolute;
+    right: 7%;
+    bottom: -80px;
+    width: min(40vw, 510px);
+    height: 650px;
+    padding: 18px;
+    box-sizing: border-box;
+    background: var(--color-yellow);
+    border-radius: var(--arch-radius);
+}
+
+.works-hero-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--arch-radius-inner);
+}
+
+.works-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------------------------ */
+/* Hero                                       */
+/* レスポンシブ対応（画面幅768px以下の場合）        */
+/* ------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .works-hero {
+        min-height: auto;
+        padding: 130px 0 60px;
+        flex-direction: column;
+    }
+
+    .works-hero-inner {
+        width: calc(100% - 40px);
+        padding-top: 0;
+    }
+
+    .works-hero-arch {
+        position: static;
+        width: min(70vw, 280px);
+        height: 320px;
+        margin: 40px auto 0;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Intro                                                                      */
+/* -------------------------------------------------------------------------- */
+
+.works-intro {
+    padding: 140px 0;
+    background: var(--color-bg);
+}
+
+.works-intro-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.works-intro-content {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 100px;
+}
+
+.works-intro-content h2 {
+    margin: 0;
+    color: var(--color-navy);
+    font-size: clamp(40px, 5vw, 68px);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.works-intro-content > div {
+    padding-top: 10px;
+}
+
+.works-intro-content p {
+    margin: 0 0 25px;
+    color: #555;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.works-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 90px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.works-filter button {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #999;
+    font-family: inherit;
+    font-size: 11px;
+    letter-spacing: .15em;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.works-filter button:hover {
+    color: var(--color-navy);
+}
+
+.works-filter button.active {
+    color: var(--color-navy);
+}
+
+/* ------------------------------------------ */
+/* Intro                                      */
+/* レスポンシブ対応（画面幅768px以下の場合）        */
+/* ------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .works-intro {
+        padding: 80px 0;
+    }
+
+    .works-intro-top {
+        margin-bottom: 40px;
+    }
+
+    .works-intro-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .works-filter {
+        gap: 20px 28px;
+        margin-top: 50px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Featured Work                                                              */
+/* -------------------------------------------------------------------------- */
+
+.featured-work {
+    padding: 140px 0;
+    background: var(--color-white);
+}
+
+.featured-image {
+    height: 620px;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-info {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.featured-number {
+    color: var(--color-navy);
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.featured-category {
+    margin: 0 0 12px;
+    color: var(--color-navy);
+    font-size: 10px;
+    letter-spacing: .15em;
+}
+
+.featured-info h2 {
+    margin: 0 0 25px;
+    color: var(--color-navy);
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.35;
+    font-weight: 500;
+}
+
+.featured-text {
+    max-width: 600px;
+    margin: 0 0 40px;
+    color: var(--color-text-light);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.featured-info dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+    margin: 0;
+}
+
+.featured-info dl div {
+    min-width: 100px;
+}
+
+.featured-info dt {
+    margin-bottom: 5px;
+    color: #999;
+    font-size: 9px;
+    letter-spacing: .15em;
+}
+
+.featured-info dd {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 12px;
+}
+
+/* ------------------------------------------ */
+/* Featured Work                              */
+/* レスポンシブ対応（画面幅768px以下の場合）        */
+/* ------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .featured-work {
+        padding: 80px 0;
+    }
+
+    .featured-image {
+        height: 320px;
+    }
+
+    .featured-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Work Grid                                                                  */
+/* -------------------------------------------------------------------------- */
+
+.works-grid-section {
+    padding: 140px 0;
+    background: var(--color-bg);
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px 35px;
+}
+
+.work-item-large,
+.work-item-wide {
+    grid-column: 1 / 3;
+}
+
+.work-item {
+    transition: opacity .3s ease;
+}
+
+.work-item.is-filtered-out {
+    display: none;
+}
+
+.work-item-image {
+    height: 430px;
+    overflow: hidden;
+}
+
+.work-item-large .work-item-image {
+    height: 550px;
+}
+
+.work-item-wide .work-item-image {
+    height: 500px;
+}
+
+.work-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease;
+}
+
+.work-item:hover img,
+.work-item a:focus-visible img {
+    transform: scale(1.04);
+}
+
+.work-item-info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+    padding-top: 22px;
+}
+
+.work-item-info span {
+    color: var(--color-navy);
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.work-item-info p {
+    margin: 8px 0 0;
+    color: #777;
+    font-size: 9px;
+    letter-spacing: .12em;
+}
+
+.work-item-info h3 {
+    margin: 0;
+    color: var(--color-navy);
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* ------------------------------------------ */
+/* Work Grid                                  */
+/* レスポンシブ対応（画面幅768px以下の場合）        */
+/* ------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .works-grid-section {
+        padding: 80px 0;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .work-item-large,
+    .work-item-wide {
+        grid-column: 1;
+    }
+
+    .work-item-image,
+    .work-item-large .work-item-image,
+    .work-item-wide .work-item-image {
+        height: 260px;
+    }
+
+    .work-item-info {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Approach                                                                   */
+/* -------------------------------------------------------------------------- */
+
+.works-approach {
+    padding: 140px 0;
+    background: var(--color-navy);
+    color: var(--color-white);
+}
+
+.works-approach-heading {
+    margin-bottom: 80px;
+}
+
+.works-approach-heading .section-number {
+    color: var(--color-yellow);
+}
+
+.works-approach-heading .section-label {
+    margin: 10px 0;
+    color: rgba(255, 255, 255, .65);
+}
+
+.works-approach-heading h2 {
+    margin: 0;
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.process-list {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.process-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 30px;
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.process-item > span {
+    color: var(--color-yellow);
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.process-item p {
+    margin: 0 0 5px;
+    color: var(--color-yellow);
+    font-size: 10px;
+    letter-spacing: .15em;
+}
+
+.process-item h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.process-item small {
+    color: rgba(255, 255, 255, .65);
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* ------------------------------------------ */
+/* Approach                                   */
+/* レスポンシブ対応（画面幅768px以下の場合）        */
+/* ------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .works-approach {
+        padding: 80px 0;
+    }
+
+    .works-approach-heading {
+        margin-bottom: 50px;
+    }
+
+    .process-item {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+        padding: 25px 0;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Showroom CTA                                                               */
+/* -------------------------------------------------------------------------- */
+
+.works-showroom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 650px;
+    background: var(--color-yellow);
+}
+
+.works-showroom-image {
+    overflow: hidden;
+}
+
+.works-showroom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.works-showroom-content {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-navy);
+}
+
+.works-showroom-content .section-label {
+    margin-bottom: 25px;
+    color: var(--color-navy);
+}
+
+.works-showroom-content h2 {
+    margin: 0 0 35px;
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.works-showroom-content > p {
+    max-width: 450px;
+    margin: 0 0 40px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.works-showroom-content a {
+    position: relative;
+    max-width: 300px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-navy);
+    font-size: 10px;
+    letter-spacing: .15em;
+    transition: border-color .3s ease;
+}
+
+.works-showroom-content a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1px;
+    background: var(--color-navy);
+    transition: width .5s var(--ease-smooth);
+}
+
+.works-showroom-content a:hover {
+    border-color: transparent;
+}
+
+.works-showroom-content a:hover::after {
+    width: 100%;
+}
+
+.works-showroom-content a span {
+    font-size: 18px;
+    transition: transform .4s ease;
+}
+
+.works-showroom-content a:hover span {
+    transform: translateX(6px);
+}
+
+/* ------------------------------------------ */
+/* Showroom CTA                               */
+/* レスポンシブ対応（画面幅768px以下の場合）        */
+/* ------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .works-showroom {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .works-showroom-image {
+        height: 300px;
+    }
+
+    .works-showroom-content {
+        padding: 60px 24px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Next                                                                       */
+/* -------------------------------------------------------------------------- */
+
+.works-next {
+    background: var(--color-white);
+}
+
+.works-next a {
+    min-height: 300px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-navy);
+}
+
+.works-next span {
+    font-size: 10px;
+    letter-spacing: .2em;
+}
+
+.works-next h2 {
+    margin: 10px 0 0;
+    font-size: clamp(50px, 7vw, 95px);
+    line-height: .9;
+    font-weight: 500;
+}
+
+.works-next strong {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* ------------------------------------------ */
+/* Next                                       */
+/* レスポンシブ対応（画面幅768px以下の場合）        */
+/* ------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .works-next a {
+        min-height: 220px;
+        padding: 0 24px;
+    }
+}

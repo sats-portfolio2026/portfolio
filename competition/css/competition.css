@@ -1,0 +1,214 @@
+/* =========================
+   Competition Works
+========================= */
+
+.competition {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 160px 8% 140px;
+}
+
+/* ページタイトル */
+.competition-header {
+    margin-bottom: 100px;
+}
+
+.competition-header p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 2;
+    color: #666;
+}
+
+/* =========================
+   Works List
+========================= */
+
+.competition-list {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.competition-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 35px;
+}
+
+.competition-number {
+    padding-top: 5px;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: #888;
+}
+
+.competition-content {
+    display: grid;
+    grid-template-columns: minmax(0, 400px) 1fr;
+    gap: 50px;
+    align-items: end;
+    max-width: 1000px;
+}
+
+.competition-body {
+    min-width: 0;
+}
+
+/* 作品画像 */
+.competition-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.competition-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s ease;
+}
+
+.competition-item:hover .competition-image img {
+    transform: scale(1.02);
+}
+
+/* 作品タイトル */
+.competition-title {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    margin-bottom: 10px;
+}
+
+.competition-title h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.competition-details h3 {
+    margin: 20px 0 8px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    color: #444;
+}
+
+.competition-details h3:first-child {
+    margin-top: 18px;
+}
+
+.competition-title span {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #888;
+}
+
+/* 画像を見るボタン */
+.competition-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 28px;
+    padding: 0 0 5px;
+    border: 0;
+    border-bottom: 1px solid var(--color-text);
+    background: transparent;
+    color: var(--color-text);
+    font-family: var(--font-serif);
+    font-size: 0.9375rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.competition-link:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+    transform: scale(1.05);
+}
+
+/* 説明 */
+.competition-description {
+    max-width: 700px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 2;
+    color: #666;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1000px) {
+
+    .competition {
+        padding: 120px 6% 100px;
+    }
+
+    .competition-header {
+        margin-bottom: 70px;
+    }
+
+    .competition-header p {
+        font-size: 13px;
+    }
+
+    .competition-list {
+        gap: 90px;
+    }
+
+    .competition-item {
+        display: block;
+    }
+
+    .competition-number {
+        display: block;
+        margin-bottom: 14px;
+        padding-top: 0;
+    }
+
+    .competition-content {
+        display: block;
+    }
+
+    .competition-image {
+        max-width: 320px;
+        margin-bottom: 22px;
+    }
+
+    .competition-link {
+        margin-top: 22px;
+        font-size: 0.8125rem;
+    }
+
+    .competition-title {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .competition-title h2 {
+        margin-bottom: 7px;
+        font-size: 21px;
+    }
+
+    .competition-title span {
+        font-size: 11px;
+    }
+
+    .competition-description {
+        font-size: 12px;
+    }
+.competition-details h3 {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+}
+
+
+
+
