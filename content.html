@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Sata Portfolio</title>
+
+    <meta name="description" content="Sata Portfolio お問い合わせ">
+
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+
+        <a href="index.html" class="logo">Sata Portfolio</a>
+
+        <!-- ハンバーガーメニューボタン -->
+        <button class="hamburger" id="js-hamburger" aria-label="メニューを開閉する">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- ナビゲーションメニュー -->
+        <nav class="nav" id="js-nav">
+            <a href="index.html#hero">TOP</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="index.html#works">WORKS</a>
+            <a href="index.html#skill">SKILL</a>
+            <a href="index.html#approach">APPROACH</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+    </header>
+
+
+    <!-- メイン -->
+    <main>
+
+        <section class="contact-page">
+
+            <!-- ページタイトル -->
+            <div class="contact-page-header">
+
+                <p class="contact-page-label">お問い合わせ</p>
+
+                <h1 class="contact-page-title">
+                    Contact
+                </h1>
+
+                <p class="contact-page-lead">
+                    Web制作やデザインについて、<br>
+                    ご相談・お問い合わせがございましたら<br>
+                    お気軽にご連絡ください。
+                </p>
+
+            </div>
+
+
+            <!-- お問い合わせフォーム -->
+            <div class="contact-form">
+
+
+<form action="https://formspree.io/f/xrpgenpl" method="post">
+                    <!-- お名前 -->
+                    <div class="form-item">
+
+                        <label for="name">
+                            お名前
+                            <span>必須</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="お名前をご入力ください"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- メールアドレス -->
+                    <div class="form-item">
+
+                        <label for="email">
+                            メールアドレス
+                            <span>必須</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- 件名 -->
+                    <div class="form-item">
+
+                        <label for="subject">
+                            件名
+                            <span>必須</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="お問い合わせの件名をご入力ください"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- お問い合わせ内容 -->
+                    <div class="form-item">
+
+                        <label for="message">
+                            お問い合わせ内容
+                            <span>必須</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="8"
+                            placeholder="お問い合わせ内容をご入力ください"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- 送信 -->
+                    <div class="form-submit">
+
+                        <button
+                            type="submit"
+                            class="contact-submit"
+                        >
+                            <span>送信する</span>
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- フッター -->
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-col footer-info">
+
+                <div class="footer-logo">sata</div>
+
+
+              <div class="footer-section">
+    <p class="footer-heading">SNS</p>
+    <p>
+        <a href="https://www.instagram.com/nnnn.xx37/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Instagram
+        </a>
+    </p>
+</div>
+
+                <div class="footer-section">
+
+                    <p class="footer-heading">Contact</p>
+
+                    <p>Tel : 090-3311-0072</p>
+
+                    <p>Mail : mmi.felicita@icloud.com</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="#" class="privacy-policy">
+                Privacy Policy
+            </a>
+
+            <p>
+                &copy; sata all rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
