@@ -35,18 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-
 document.querySelectorAll(".works-link").forEach(button => {
     button.addEventListener("click", () => {
         const item = button.closest(".works-item");
         item.classList.toggle("is-open");
     });
 });
-
-
-
 
 
 // 画像ポップアップ
